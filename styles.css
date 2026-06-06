@@ -8,7 +8,7 @@
   --color-primary-dark: #183c99;
   --color-accent: #0f766e;
   --color-border: #d9e2ee;
-  --shadow-soft: 0 18px 45px rgba(23, 32, 51, 0.08);
+  --shadow-soft: 0 14px 34px rgba(23, 32, 51, 0.07);
   --radius-lg: 24px;
   --radius-md: 16px;
   --radius-sm: 10px;
@@ -43,6 +43,12 @@ a {
 
 a:hover {
   color: var(--color-primary);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid rgba(29, 78, 216, 0.45);
+  outline-offset: 3px;
 }
 
 img,
@@ -230,10 +236,10 @@ li {
 .hero::before {
   position: absolute;
   inset: -30% -10% auto auto;
-  width: 520px;
-  height: 520px;
+  width: 460px;
+  height: 460px;
   border-radius: 999px;
-  background: linear-gradient(135deg, rgba(29, 78, 216, 0.18), rgba(15, 118, 110, 0.12));
+  background: linear-gradient(135deg, rgba(29, 78, 216, 0.12), rgba(15, 118, 110, 0.08));
   content: "";
   filter: blur(8px);
 }
@@ -459,6 +465,17 @@ li {
   margin-bottom: 0;
 }
 
+.sample-label {
+  display: inline-flex;
+  margin-bottom: 0.8rem;
+  border-radius: 999px;
+  background: var(--color-surface-muted);
+  color: var(--color-primary-dark);
+  padding: 0.28rem 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
 .sample-details {
   display: grid;
   gap: 0.45rem;
@@ -621,6 +638,8 @@ li {
     background: var(--color-surface);
     padding: 1rem;
     box-shadow: var(--shadow-soft);
+    max-height: calc(100vh - 96px);
+    overflow-y: auto;
   }
 
   .nav__menu.is-open {
@@ -638,6 +657,10 @@ li {
   }
 
   .button {
+    width: 100%;
+  }
+
+  .contact-list .button {
     width: 100%;
   }
 
@@ -663,6 +686,17 @@ li {
 
   .detail-list--columns {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
   }
 }
 
