@@ -195,108 +195,191 @@
     </section>
 
     <section class="section section--muted" id="samples">
-      <div class="container">
-        <div class="section__header">
-          <p class="eyebrow">Work Samples</p>
-          <h2>Fictional examples of support communication and ticket documentation.</h2>
-          <p class="notice">
-            All samples below are fictional and created for demonstration purposes. They do not include real customer
-            data, company information, client names, internal tools, screenshots, real tickets, private procedures, or
-            confidential documentation.
-          </p>
-        </div>
+  <div class="container">
+    <div class="section__header">
+      <p class="eyebrow">Work Samples</p>
+      <h2>Fictional examples based on real support workflows.</h2>
+      <p class="notice">
+        All samples below are fictional and created for demonstration purposes. They do not include real customer
+        data, company information, client names, internal tools, screenshots, real tickets, private procedures, or
+        confidential documentation.
+      </p>
+    </div>
 
-        <div class="sample-grid">
-          <article class="sample-card">
-            <h3>Customer Support Email: Lost Package</h3>
-            <p class="sample-label">Fictional customer support sample</p>
-            <p><strong>Subject:</strong> Update on your package</p>
-            <p>
-              Hi Alex, thank you for contacting us. I understand how frustrating it is when a package does not arrive
-              as expected, and I will help review the available information.
-            </p>
-            <p>
-              I have reviewed the order status and will follow up on the latest delivery update. The next step is to
-              confirm the last scan and expected delivery window. I will update you as soon as more information is
-              available. If the package cannot be located, we can review the available resolution options according to
-              the order status and support policy.
-            </p>
-            <p>Thank you for your patience, and I will keep this case active until we have a clear update.</p>
-          </article>
+    <div class="sample-grid">
+      <article class="sample-card">
+        <h3>Chatbot Incident Troubleshooting</h3>
+        <p class="sample-label">Fictional technical support sample</p>
+        <dl class="sample-details">
+          <dt>Initial request</dt>
+          <dd>
+            A client reports that the chatbot is not working and needs an urgent resolution.
+          </dd>
 
-          <article class="sample-card">
-            <h3>Customer Support Email: Address Change Request</h3>
-            <p class="sample-label">Fictional customer support sample</p>
-            <p><strong>Subject:</strong> Address change request received</p>
-            <p>
-              Hi Jordan, thank you for sending the updated delivery address. I have received your request and will
-              review whether the address can still be changed based on the current order status.
-            </p>
-            <p>
-              If the order has not yet entered the final shipping stage, we will process the update and confirm it by
-              email. If the order is already in transit, I will explain the next available options and any steps needed
-              with the carrier.
-            </p>
-            <p>I appreciate you reaching out quickly. I will follow up once the status is confirmed.</p>
-          </article>
+          <dt>Issue summary</dt>
+          <dd>
+            The chatbot flow stops responding during a specific user interaction, preventing users from completing
+            the expected support path.
+          </dd>
 
-          <article class="sample-card">
-            <h3>Customer Support Email: Delayed Order</h3>
-            <p class="sample-label">Fictional customer support sample</p>
-            <p><strong>Subject:</strong> We are reviewing your delayed order</p>
-            <p>
-              Hi Taylor, I am sorry for the delay and for the inconvenience this has caused. I understand that you were
-              expecting the order sooner, and I will do my best to help you get a clear answer.
-            </p>
-            <p>
-              I have reviewed the order information and can see that the delivery update has not changed recently. I am
-              checking the current status and will escalate the case if the carrier does not provide a timely update.
-              Once I receive confirmation, I will let you know the estimated delivery date or the next available
-              resolution.
-            </p>
-            <p>Thank you for your patience while I investigate this for you.</p>
-          </article>
+          <dt>Checks performed</dt>
+          <dd>
+            Reviewed the reported user flow, validated the affected step, checked whether the connected APIs were
+            available, and confirmed where the conversation stopped behaving as expected.
+          </dd>
 
-          <article class="sample-card">
-            <h3>Technical Support Ticket: Login Issue</h3>
-            <p class="sample-label">Fictional technical support sample</p>
-            <dl class="sample-details">
-              <dt>Issue summary</dt>
-              <dd>User cannot log in after entering valid credentials.</dd>
-              <dt>User impact</dt>
-              <dd>User is unable to access the platform dashboard and complete daily tasks.</dd>
-              <dt>Troubleshooting steps</dt>
-              <dd>
-                Confirmed username, checked account status, requested browser cache clear, tested in a different
-                browser, verified that no active service alert was published, and reviewed the latest login error time.
-              </dd>
-              <dt>Resolution or escalation notes</dt>
-              <dd>
-                Password reset resolved the issue in this scenario. Ticket documented with steps taken, timestamp, and
-                user confirmation.
-              </dd>
-            </dl>
-          </article>
+          <dt>Resolution</dt>
+          <dd>
+            Identified the failing point in the chatbot flow, applied the required correction, tested the updated path,
+            and confirmed that the chatbot response worked correctly after the fix.
+          </dd>
 
-          <article class="sample-card sample-card--wide">
-            <h3>Technical Escalation Example: API or Platform Error</h3>
-            <p class="sample-label">Fictional escalation sample</p>
-            <dl class="sample-details">
-              <dt>Summary</dt>
-              <dd>Several users report an intermittent platform error when submitting a form.</dd>
-              <dt>Steps already checked</dt>
-              <dd>Validated user permissions, confirmed the issue in a test session, checked browser console messages, and reviewed whether the behavior affects multiple accounts.</dd>
-              <dt>Evidence collected</dt>
-              <dd>Timestamp of the failed attempt, affected workflow, browser version, anonymized error message, and reproduction notes.</dd>
-              <dt>Impact</dt>
-              <dd>Users can access the platform but cannot complete the submission workflow consistently.</dd>
-              <dt>Suggested next team</dt>
-              <dd>Escalate to the platform support or engineering support team with collected evidence and reproduction steps.</dd>
-            </dl>
-          </article>
-        </div>
-      </div>
-    </section>
+          <dt>Documentation</dt>
+          <dd>
+            Documented the root cause, the change applied, the affected flow, and the validation performed after the
+            correction.
+          </dd>
+        </dl>
+      </article>
+
+      <article class="sample-card">
+        <h3>Platform Access Issue Investigation</h3>
+        <p class="sample-label">Fictional technical support sample</p>
+        <dl class="sample-details">
+          <dt>Initial request</dt>
+          <dd>
+            A user is unable to access the platform and is frustrated because the issue is blocking their work.
+          </dd>
+
+          <dt>Issue summary</dt>
+          <dd>
+            The user reports a failed access attempt. The goal is to determine whether the issue is related to user
+            credentials, account status, platform activity, or a service-side failure.
+          </dd>
+
+          <dt>Investigation steps</dt>
+          <dd>
+            Verified the user information, reviewed the reported timeframe, checked relevant platform activity, and
+            analyzed the services involved in the failed access attempt.
+          </dd>
+
+          <dt>Support response</dt>
+          <dd>
+            Provided a clear and simple explanation of what was found, avoiding unnecessary technical complexity while
+            still including the evidence needed to support the conclusion.
+          </dd>
+
+          <dt>Outcome</dt>
+          <dd>
+            The ticket was answered with the validated cause, supporting technical evidence, and the recommended next
+            step or escalation path when applicable.
+          </dd>
+        </dl>
+      </article>
+
+      <article class="sample-card">
+        <h3>Technical Escalation With Evidence</h3>
+        <p class="sample-label">Fictional escalation sample</p>
+        <dl class="sample-details">
+          <dt>Issue summary</dt>
+          <dd>
+            A platform action fails intermittently and cannot be fully resolved from the first support level.
+          </dd>
+
+          <dt>Impact</dt>
+          <dd>
+            The affected user can access the platform but cannot complete a specific workflow consistently.
+          </dd>
+
+          <dt>Checks completed</dt>
+          <dd>
+            Verified the user details, confirmed the affected workflow, reviewed the timing of the failed attempts,
+            checked whether the issue affected one or multiple users, and gathered available service activity.
+          </dd>
+
+          <dt>Evidence collected</dt>
+          <dd>
+            Included timestamps, affected action, user impact, relevant activity, reproduction notes when available,
+            and a short explanation of what was already validated before escalation.
+          </dd>
+
+          <dt>Escalation notes</dt>
+          <dd>
+            Escalated the case to the appropriate technical team with enough context to reduce back-and-forth and help
+            the next team continue the investigation efficiently.
+          </dd>
+        </dl>
+      </article>
+
+      <article class="sample-card">
+        <h3>Frustrated User Communication</h3>
+        <p class="sample-label">Fictional customer support sample</p>
+        <p><strong>Subject:</strong> We are reviewing your access issue</p>
+
+        <p>
+          Hi Alex,
+        </p>
+
+        <p>
+          I understand how frustrating this situation is, especially if you need access to the platform to continue
+          your work. Thank you for sharing the details with us.
+        </p>
+
+        <p>
+          I reviewed the information available for the reported timeframe and checked the activity related to your
+          access attempt. Based on the current evidence, the issue appears to be connected to the platform response
+          during the login process rather than a general account restriction.
+        </p>
+
+        <p>
+          I have documented the details and included the relevant technical evidence so the case can be reviewed
+          properly. I will continue following the ticket and update you as soon as we have a confirmed next step.
+        </p>
+
+        <p>
+          Thank you for your patience. I know this is inconvenient, and we are treating it with priority.
+        </p>
+      </article>
+
+      <article class="sample-card sample-card--wide">
+        <h3>Data Accuracy Review</h3>
+        <p class="sample-label">Fictional operations and data quality sample</p>
+        <dl class="sample-details">
+          <dt>Issue summary</dt>
+          <dd>
+            A record contains incomplete or inconsistent information and needs to be reviewed before it can be processed
+            or submitted.
+          </dd>
+
+          <dt>Objective</dt>
+          <dd>
+            Ensure the information is accurate, complete, consistent, and aligned with the required process before
+            moving forward.
+          </dd>
+
+          <dt>Review process</dt>
+          <dd>
+            Compared the entered information against the available source documents, identified missing or inconsistent
+            fields, corrected the data when appropriate, and flagged items that required confirmation from another
+            source.
+          </dd>
+
+          <dt>Quality control</dt>
+          <dd>
+            Verified that the final record was complete, properly formatted, and consistent with the expected standards
+            before closing the task.
+          </dd>
+
+          <dt>Confidentiality</dt>
+          <dd>
+            Handled all information with discretion and followed the required data security and confidentiality
+            procedures throughout the review.
+          </dd>
+        </dl>
+      </article>
+    </div>
+  </div>
+</section>
 
     <section class="section" id="process">
       <div class="container">
